@@ -277,7 +277,7 @@ $tableau =array ("Jean", "Robert", "Paul");
 $cle_aleatoire = array_rand ($tableau);
 echo "Nom au hasard : " .$tableau [$cle_aleatoire] ."<br>";
 
-$tab = array ("Jean", "Robert", "Paul");
+$tab = array ("Jean", "Robert", "Paul");    
 $tab_cles_aleatoires = array_rand ($tab, 2);
 echo "Premier nom : " .$tableau [$tab_cles_aleatoires[0]] ."<br>";
 echo "Second nom  : " .$tableau [$tab_cles_aleatoires[1]] ."<br>";
