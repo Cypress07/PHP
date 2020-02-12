@@ -12,6 +12,15 @@ function boucle_yield (){
 $generateur = boucle_yield();
 //affichage des valeurs
 foreach ($generateur as $val) {
-    echo $val." ";
-    
+    echo $val." " ."</br>";    
+}
+
+function carre ($a){
+    foreach ($a as $val) yield $val*$val;
+}
+//déclaration d'un tableau de nombres
+$arr = array (5, 8, 15, 35);
+//affichage des carrés des valeurs du tableau
+foreach (carre($arr) as $val) {
+    echo $val," ";
 }
