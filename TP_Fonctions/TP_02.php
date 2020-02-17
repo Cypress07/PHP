@@ -2,7 +2,7 @@
 
 $tab1 = array();
   
-function echanger(&$tab, $i, $j)
+function swap (&$tab, $i, $j)
 {
    $temp= $tab[$i];
    $tab[$i] = $tab[$j];
@@ -22,7 +22,7 @@ while($long>0)
         $max = $i;
     }
   }
-    echanger($tab1, $max, $long);
+    swap($tab1, $max, $long);
    
   $long--;
 }
