@@ -1,8 +1,8 @@
 <?php
 
-$tableau1 = array();
+$tab1 = array();
   
-function echanger(&$tableau, $i, $j)
+function echanger(&$tab, $i, $j)
 {
    $temp= $tab[$i];
    $tab[$i] = $tab[$j];
