@@ -4,9 +4,9 @@ $tab1 = array();
   
 function echanger (&$tab, $i, $j)
 {
-   $temp= $tab[$i];
+   $tmp= $tab[$i];
    $tab[$i] = $tab[$j];
-   $tab[$j] = $temp ;
+   $tab[$j] = $tmp ;
 
 for ($i=1;$i<=10;$i++) {
     $tab1[$i]=rand(1,100);
