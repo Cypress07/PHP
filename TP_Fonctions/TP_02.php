@@ -1,32 +1,30 @@
 <?php
-
+ 
 $tab1 = array();
-  
-function echanger (&$tab, $i, $j)
-{
-   $tmp= $tab[$i];
-   $tab[$i] = $tab[$j];
-   $tab[$j] = $tmp ;
-
 for ($i=1;$i<=10;$i++) {
     $tab1[$i]=rand(1,100);
+    }
+  
+function echanger(&$tab, $i, $j)
+{
+   $tmp = $tab[$i];
+   $tab[$i] = $tab[$j];
+   $tab[$j] = $tmp;
 }
-  
-  
-$long=10;
-while($long>0)
+
+$length=10;
+while($length>0)
 {
   $max = 1;
-  for($i=1; $i<=$long; $i++) {
+  for($i=1; $i<=$length; $i++) {
      if($tab1[$i]>$tab1[$max]) {
         $max = $i;
     }
   }
-    echanger ($tab1, $max, $long);
-   
-  $long--;
+    echanger($tab1, $max, $length);
+    $length--;
 }
-  
-for ($i=1;$i<=10;$i++) {
-    echo $tab1[$i].", ";
+for ($i=1;$i<=10;$i++) { 
+    echo $tab1[$i].",";
 }
+    
