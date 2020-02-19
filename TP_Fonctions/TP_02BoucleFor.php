@@ -22,5 +22,3 @@ function echanger(&$tab, $i, $j)
   echanger($tab, $max, $nbr);
 } 
     echo implode (",", $tab);
-  
-    
