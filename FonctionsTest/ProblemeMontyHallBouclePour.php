@@ -5,13 +5,12 @@ define('HAS_NO_PRICE', false);
 $essais    = 0;
 $gagnant      = 0;
 $gagnantPremierChoix = 0;
-$i        = 0;
 $choix     = 0;
  
 /**
  * Bottom line, you play against being wrong the first time
  */
-while (++$i <= 100000) {
+for ($i=0 ; $i<=10000 ; ++$i) {
     $scenario = [HAS_NO_PRICE, HAS_NO_PRICE, HAS_NO_PRICE];
     /**
      * Set random scenario element to true
