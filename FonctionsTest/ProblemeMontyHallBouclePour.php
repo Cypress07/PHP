@@ -1,27 +1,20 @@
 <?php
 
-define('HAS_PRICE', true);
-define('HAS_NO_PRICE', false);
-$essais    = 0;
-$gagnant      = 0;
+define('Gagne_Prix', true);
+define('NE_Gagne_pas_Prix', false);
+$essais = 0;
+$gagnant = 0;
 $gagnantPremierChoix = 0;
-$choix     = 0;
+$choix = 0;
  
-/**
- * Bottom line, you play against being wrong the first time
- */
-for ($i=0 ; $i<=10000 ; ++$i) {
-    $scenario = [HAS_NO_PRICE, HAS_NO_PRICE, HAS_NO_PRICE];
-    /**
-     * Set random scenario element to true
-     */
-    $scenario[mt_rand(0, 2)] = HAS_PRICE;
+
+for ($i=1 ; $i<=10000 ; ++$i) {
+    $scenario = [NE_Gagne_pas_Prix, NE_Gagne_pas_Prix, NE_Gagne_pas_Prix];
+    
+    $scenario[mt_rand(0, 2)] = Gagne_Prix;
  
-    /**
-     * Premier choix - 1 in 3
-     */
     $choix = mt_rand(0, 2);
-    if ($scenario[$choix] === HAS_PRICE) {
+    if ($scenario[$choix] === Gagne_Prix) {
         $gagnantPremierChoix++;
     } else {
         $gagnant++;
