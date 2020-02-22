@@ -1,6 +1,6 @@
 <?php
 
-function test (?string, $name): ?string {
+function test ($string, $name) {
     return $name;   
 }
 
