@@ -8,7 +8,11 @@
     </head>
     <body>
         <?php
-        echo "Le nom reçu est " .$_GET['nom']."</br>";
-        echo "Le prénom reçu est " .$_GET['prenom']."</br>";
-      
-
+       
+       if (isset ($_GET['donnee'])){ 
+        foreach ($_GET['donnee'] as $value){
+        echo $value." ". '<br />';
+        }
+       }
+         
+        
