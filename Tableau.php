@@ -107,7 +107,7 @@ foreach ($tableau as $val) {
     echo 'Valeur : ' .$val.'<br>';
 }
 
-//Depusi PHP 7 foreach travaille sur une copie du tableau
+//Depuis PHP 7 foreach travaille sur une copie du tableau
 // le pointeur du tableau n'est plus modifié pendant son parcours
 //reste modifiable s'il est passé pa rréférence
 $tab = [0];

@@ -1,11 +1,11 @@
 <?php
 
-$a= rand (2, 10000);
-$b= rand (2, 10000);
+$n= rand (2, 10000);
+$p= rand (2, 10000);
 
-echo "Le plus grand dénominateur commun à $a et $b est :"."</br>";
+echo "Le plus grand dénominateur commun à $n et $p est :"."</br>";
 
-pgcd($a, $b);
+pgcd($n, $p);
 
 function pgcd ($a, $b) {
       

@@ -1,6 +1,5 @@
 <?php
 
- 
 $n = rand (1, 10000);
 echo "La table de multiplication de $n est : "."</br>";
 multiplier ($n);  
